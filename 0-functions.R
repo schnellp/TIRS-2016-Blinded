@@ -133,7 +133,7 @@ gibbs.sample <- function(iters, burn.in=100,
   lambda <- c(1, 1)
   a <- rbinom(N, 1, r)
   
-  sample <- matrix(NA, ncol=4, nrow=(burn.in + iters))
+  sample <- matrix(NA, ncol=2, nrow=(burn.in + iters))
   colnames(sample) <- c("control", "treatment")
   sample[1, ] <- c(lambda)
   
