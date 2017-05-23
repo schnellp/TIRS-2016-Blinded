@@ -52,10 +52,10 @@ treatment.rate.probabilities <- c(
 ############################
 
 # Compute prior parameters
-control.prior <- find.prior.params(control.rate.quantiles,
-                                   control.rate.probabilities)
-treatment.prior <- find.prior.params(treatment.rate.quantiles,
-                                     treatment.rate.probabilities)
+control.prior <- params.from.quantiles(control.rate.quantiles,
+                                       control.rate.probabilities)
+treatment.prior <- params.from.quantiles(treatment.rate.quantiles,
+                                         treatment.rate.probabilities)
 
 # Final output
 print("Control AESI rate prior parameters:")
